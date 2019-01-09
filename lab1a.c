@@ -10,7 +10,7 @@ int main () {
 	printf("informe c\n");
 	scanf("%d", &c);
 	
-	res = (((c*2)+(b*3)+(c*4))%11)-11;
+	res = ((((c*2)+(b*3)+(c*4))*10)%11);
 	
 	printf("%d\n", res);
 	
