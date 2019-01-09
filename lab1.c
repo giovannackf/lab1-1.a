@@ -1,14 +1,23 @@
 #include <stdio.h>
 int main () {
-	int l1, l2, l3;
+	int a, b, c;
 
-	printf("lado 1\n");
-	scanf("%d", &l1);
-	printf("lado 2\n");
-	scanf("%d", &l2);
-	printf("lado 3\n");
-	scanf("%d", &l3);
+	printf("lado a\n");
+	scanf("%d", &a);
+	printf("lado b\n");
+	scanf("%d", &b);
+	printf("lado c\n");
+	scanf("%d", &c);
 	
-    
+	if(a+b == a+c&& a+c == b+c) {
+		printf("triangulo equilatero");
+	}
+    else if(a+b == a+c) {
+    	printf("triangulo isoceles");
+	}
+	else if (a+b != a+c && a+c != b+c) {
+	printf("triangulo escaleno");
+	}
+	
 	return 0;
 }
